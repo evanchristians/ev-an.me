@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,400|Work+Sans:100,400");
+body {
+  background: #d6eadf;
+  margin: 0;
+  padding: 0 2em;
+  text-align: center;
+  color: #b8e0d2;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 8em;
+  text-align: left;
+}
+
+/*# sourceMappingURL=main.css.map */
