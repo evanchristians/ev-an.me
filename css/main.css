@@ -4,15 +4,55 @@ body {
   margin: 0;
   padding: 0 2em;
   text-align: center;
-  color: #b8e0d2;
+  color: #444444dd;
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
 }
 
 h1 {
+  margin: 0 auto;
+  text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  font-size: 8em;
+  font-size: 5em;
+  font-weight: 100;
   text-align: left;
+  line-height: 1.2em;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  max-width: 60em;
+  margin: 0 auto;
+  padding: 2em 1em;
+  justify-content: flex-end;
+}
+nav a {
+  font-size: 1.1em;
+  text-decoration: none;
+  margin-left: 2em;
+  color: inherit;
+  position: relative;
+  padding: 1em;
+}
+nav a:hover:before {
+  width: 50%;
+}
+nav a:before {
+  transition: width 200ms ease-out;
+  content: "";
+  background: #444;
+  height: 20%;
+  width: 0;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+.wrapper {
+  max-width: 60em;
+  position: relative;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
