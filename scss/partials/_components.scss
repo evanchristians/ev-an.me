@@ -1,0 +1,21 @@
+.call_to_action {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-family: $pop;
+  color: $white;
+  padding: .5em 1em;
+  border-radius: 2em;
+  border: none;
+  background: $color3;
+  margin: 1em 0;
+  transition: all 400ms $out_med;
+  box-shadow: 0 1em 5em #ffffff0f;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 1em 5em #ffffff04, 0 .1em .2em #0000002f, 0 .2em 4em .1em $color3_shadow;
+  }
+}
+
+.pink {
+  color: $color3;
+}

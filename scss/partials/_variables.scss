@@ -3,11 +3,16 @@
 $ws: 'Work Sans', sans-serif;
 
 $pop: 'Poppins', sans-serif;
-
+$out_med: cubic-bezier(0.165, 0.84, 0.44, 1);
+$out_ex: cubic-bezier(0.19, 1, 0.22, 1);
+$inout_med: cubic-bezier(0.645, 0.045, 0.355, 1);
+$out_bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 // colors
 
-$color1: rgba(128, 155, 206, 1);
-$color2: rgba(149, 184, 209, 1);
-$color3: rgba(184, 224, 210, 1);
-$color4: rgba(214, 234, 223, 1);
-$color5: rgba(67, 82, 74, 1);
+$color1: rgba(206, 236, 151, 1);
+$color2: rgba(244, 179, 147, 1);
+$color3: rgba(252, 96, 168, 1);
+$color3_shadow: rgba(252, 96, 168, .2);
+$color4: rgba(122, 40, 203, 1);
+$color5: rgba(73, 67, 104, 1);
+$white: #f9f9f9;
