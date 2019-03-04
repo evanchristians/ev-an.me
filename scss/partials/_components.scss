@@ -1,6 +1,6 @@
 .call_to_action {
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 200;
   font-family: $pop;
   color: $white;
   padding: .4em .8em;
@@ -8,17 +8,18 @@
   border: none;
   background: $color3;
   margin: 1em 0;
-  transition: all 400ms $out_med;
-  box-shadow: 0 1em 5em #ffffff04;
+  transition: all 200ms $out_med;
+  box-shadow: 0 1em 3em #ffffff04;
   cursor: pointer;
   &:focus {
     outline: none;
-    box-shadow: 0 1em 5em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em 1em $color3_shadow !important;
+    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em 1em $color3_shadow !important;
     // transform: translateY(-.05em);
   }
   &:hover {
-    box-shadow: 0 1em 5em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em $color3_shadow;
+    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em $color3_shadow;
     // transform: translateY(-.05em);
+    background: $color3_hilite;
   }
 }
 
@@ -28,9 +29,13 @@
 
 .spin {
   display: inline-block;
-  transition: all 500ms $out_bounce;
+  transition: all 600ms $out_bounce;
 }
 
 .nobreak {
   white-space: nowrap;
+}
+
+.dot {
+  font-weight: 300;
 }

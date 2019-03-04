@@ -53,17 +53,17 @@ nav {
         font-size: 1.2em;
         text-decoration: none;
         font-weight: 200;
-        margin-left: 1em;
+        margin-left: .5em;
         color: inherit;
         position: relative;
-        padding: .4em .2em;
+        padding: 1em .5em;
         overflow: hidden;
         span {
             transition: all 300ms $inout_med;
         }
         &:hover:before {
-            width: 2em;
-            right: calc(50% - 1em);
+            width: 1.5em;
+            right: calc(50% - .75em);
             // opacity: 1;
         }
         &:hover span {
@@ -73,10 +73,10 @@ nav {
             transition: all 300ms $out_bounce;
             content: '';
             background: $color3;
-            height: 10%;
+            height: .2em;
             width: 0;
             position: absolute;
-            bottom: 0;
+            bottom: .75em;
             right: 100%;
             z-index: -1;
             border-radius: 1em;
