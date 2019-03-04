@@ -9,7 +9,7 @@ body {
   padding: 0 2em;
   color: #f9f9f9;
   font-family: "Work Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 h1 {
@@ -56,10 +56,10 @@ nav a {
   font-size: 1.2em;
   text-decoration: none;
   font-weight: 200;
-  margin-left: 0.5em;
+  margin-left: 2em;
   color: inherit;
   position: relative;
-  padding: 1em 0.5em;
+  padding: 1em 0;
   overflow: hidden;
 }
 nav a span {
@@ -86,10 +86,11 @@ nav a:before {
 }
 
 .wrapper {
-  max-width: 72em;
+  max-width: 65em;
   padding: 0 1em;
   position: relative;
   margin: 0 auto;
+  padding-bottom: 5em;
 }
 
 .call_to_action {

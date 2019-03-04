@@ -7,7 +7,7 @@ body {
     padding: 0 2em;
     color: $white;
     font-family: $ws;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 h1 {
@@ -53,10 +53,10 @@ nav {
         font-size: 1.2em;
         text-decoration: none;
         font-weight: 200;
-        margin-left: .5em;
+        margin-left: 2em;
         color: inherit;
         position: relative;
-        padding: 1em .5em;
+        padding: 1em 0;
         overflow: hidden;
         span {
             transition: all 300ms $inout_med;
