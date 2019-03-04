@@ -1,3 +1,6 @@
+*, :before, :after {
+    box-sizing: border-box;
+}
 body {
     background: $color5;
     margin: 0;
@@ -5,6 +8,10 @@ body {
     color: $white;
     font-family: $ws;
     font-size: 16px;
+}
+
+h1 {
+    word-break: break-all;
 }
 
 h1, h2 {
@@ -28,13 +35,13 @@ nav {
     width: 100%;
     max-width: 60em;
     margin: 0 auto;
-    padding: 2em 1em;
+    padding: 2em 0;
     justify-content: flex-end;
     a {
         font-family: $pop;
         font-size: 1.2em;
         text-decoration: none;
-        font-weight: 300;
+        font-weight: 200;
         margin-left: 1em;
         color: inherit;
         position: relative;
@@ -46,7 +53,7 @@ nav {
         &:hover:before {
             width: 2em;
             right: calc(50% - 1em);
-            opacity: 1;
+            // opacity: 1;
         }
         &:hover span {
             color: $color3;
@@ -62,7 +69,7 @@ nav {
             right: 100%;
             z-index: -1;
             border-radius: 1em;
-            opacity: 0;
+            // opacity: 0;
         }
     }
 }

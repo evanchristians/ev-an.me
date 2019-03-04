@@ -11,6 +11,10 @@
   transition: all 400ms $out_med;
   box-shadow: 0 1em 5em #ffffff0f;
   cursor: pointer;
+  &:focus {
+    outline: none;
+    box-shadow: 0 1em 5em #ffffff04, 0 .1em .2em #0000002f, 0 .2em 4em 1em $color3_shadow !important;
+  }
   &:hover {
     box-shadow: 0 1em 5em #ffffff04, 0 .1em .2em #0000002f, 0 .2em 4em .1em $color3_shadow;
   }
