@@ -27,9 +27,14 @@ h1, h2 {
 }
 
 h2 {
+  display: block;
   margin: 0.2em 0;
   font-size: 5em;
   padding-right: 4em;
+}
+h2:hover .spin {
+  transform: rotateY(180deg) !important;
+  color: #fc60a8;
 }
 
 h3 {
@@ -92,25 +97,34 @@ nav a:before {
   font-weight: 300;
   font-family: "Poppins", sans-serif;
   color: #f9f9f9;
-  padding: 0.5em 1em;
+  padding: 0.4em 0.8em;
   border-radius: 2em;
   border: none;
   background: #fc60a8;
   margin: 1em 0;
   transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 0 1em 5em #ffffff0f;
+  box-shadow: 0 1em 5em #ffffff04;
   cursor: pointer;
 }
 .call_to_action:focus {
   outline: none;
-  box-shadow: 0 1em 5em #ffffff04, 0 0.1em 0.2em #0000002f, 0 0.2em 4em 1em rgba(252, 96, 168, 0.2) !important;
+  box-shadow: 0 1em 5em #ffffff04, 0 0.1em 0.2em #0000003f, 0 0.2em 3em 1em rgba(252, 96, 168, 0.15) !important;
 }
 .call_to_action:hover {
-  box-shadow: 0 1em 5em #ffffff04, 0 0.1em 0.2em #0000002f, 0 0.2em 4em 0.1em rgba(252, 96, 168, 0.2);
+  box-shadow: 0 1em 5em #ffffff04, 0 0.1em 0.2em #0000003f, 0 0.2em 3em rgba(252, 96, 168, 0.15);
 }
 
 .pink {
   color: #fc60a8;
+}
+
+.spin {
+  display: inline-block;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nobreak {
+  white-space: nowrap;
 }
 
 @media (max-width: 680px) {

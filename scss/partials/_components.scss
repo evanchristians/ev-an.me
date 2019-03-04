@@ -3,23 +3,34 @@
   font-weight: 300;
   font-family: $pop;
   color: $white;
-  padding: .5em 1em;
+  padding: .4em .8em;
   border-radius: 2em;
   border: none;
   background: $color3;
   margin: 1em 0;
   transition: all 400ms $out_med;
-  box-shadow: 0 1em 5em #ffffff0f;
+  box-shadow: 0 1em 5em #ffffff04;
   cursor: pointer;
   &:focus {
     outline: none;
-    box-shadow: 0 1em 5em #ffffff04, 0 .1em .2em #0000002f, 0 .2em 4em 1em $color3_shadow !important;
+    box-shadow: 0 1em 5em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em 1em $color3_shadow !important;
+    // transform: translateY(-.05em);
   }
   &:hover {
-    box-shadow: 0 1em 5em #ffffff04, 0 .1em .2em #0000002f, 0 .2em 4em .1em $color3_shadow;
+    box-shadow: 0 1em 5em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em $color3_shadow;
+    // transform: translateY(-.05em);
   }
 }
 
 .pink {
   color: $color3;
+}
+
+.spin {
+  display: inline-block;
+  transition: all 500ms $out_bounce;
+}
+
+.nobreak {
+  white-space: nowrap;
 }
