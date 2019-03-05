@@ -1,5 +1,7 @@
 .call_to_action {
-  font-size: 1.75em;
+  z-index: 2;
+  position: relative;
+  font-size: 1.65em;
   font-weight: 200;
   font-family: $pop;
   color: $white;
@@ -8,7 +10,7 @@
   border: none;
   background: $color3;
   margin: 1em 0;
-  transition: all 200ms $out_med;
+  transition: all 300ms $out_med;
   box-shadow: 0 1em 3em #ffffff04, 0 .1em .2em #0000000f, 0 .2em 3em .5em $color3_shadow ;
   cursor: pointer;
   &:focus {
@@ -20,10 +22,53 @@
     box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em 1.1em $color3_shadow;
     // transform: translateY(-.05em);
     background: $color3_hilite;
+    & .tooltip {
+      opacity: 1;
+      transform: translate(-50%, -1em);
+      transition: all 300ms $out_med;
+      &:before {
+        bottom: -.6em;
+        transition: all 300ms $out_med;
+      }
+    }
   }
   &:active {
     box-shadow: 0 1em 3em 1em #ffffff04, 0 0em 0em #0000003f, 0 .2em 3em 1.5em $color3_shadow !important;
     transform: translateY(.1em);
+  }
+}
+
+.tooltip {
+  font-size: .65em;
+  background: #303030;
+  color: $white;
+  padding: .6em;
+  border-radius: .5em;
+  position: absolute;
+  top: -3em;
+  transition: all 200ms $in_med;
+  opacity: 0;
+  left: 50%;
+  transform: translate(-50%, -.2em);
+  font-weight: 100;
+  font-family: $pop;
+  z-index: -1;
+  &::before {
+    transition: all 200ms $in_med;
+    border-right: .6em solid transparent;
+    border-top: .6em solid #303030;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    left: 1.5em;
+  }
+  &:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }
 
