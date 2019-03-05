@@ -31,10 +31,7 @@ h2 {
   margin: 0.2em 0;
   font-size: 4.5em;
   padding-right: 3em;
-}
-h2:hover .spin {
-  transform: rotateY(180deg) !important;
-  color: #fc60a8;
+  width: fit-content;
 }
 
 h3 {
@@ -103,7 +100,7 @@ nav a:before {
   border: none;
   background: #fc60a8;
   margin: 1em 0;
-  transition: all 200ms ease-out;
+  transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
   box-shadow: 0 1em 3em #ffffff04;
   cursor: pointer;
 }
@@ -115,6 +112,10 @@ nav a:before {
   box-shadow: 0 1em 3em 1em #ffffff04, 0 0.1em 0.2em #0000003f, 0 0.2em 3em rgba(252, 96, 168, 0.15);
   background: #ec4d98;
 }
+.call_to_action:active {
+  box-shadow: 0 1em 3em 1em #ffffff04, 0 0em 0em #0000003f, 0 0.2em 3em 1em rgba(252, 96, 168, 0.15) !important;
+  transform: translateY(0.1em);
+}
 
 .pink {
   color: #fc60a8;
@@ -122,7 +123,12 @@ nav a:before {
 
 .spin {
   display: inline-block;
-  transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 700ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.spin_o {
+  transform: rotateY(180deg) !important;
+  color: #fc60a8;
 }
 
 .nobreak {

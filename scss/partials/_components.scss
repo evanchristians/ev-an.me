@@ -8,7 +8,7 @@
   border: none;
   background: $color3;
   margin: 1em 0;
-  transition: all 200ms ease-out;
+  transition: all 200ms $out_med;
   box-shadow: 0 1em 3em #ffffff04;
   cursor: pointer;
   &:focus {
@@ -21,15 +21,25 @@
     // transform: translateY(-.05em);
     background: $color3_hilite;
   }
+  &:active {
+    box-shadow: 0 1em 3em 1em #ffffff04, 0 0em 0em #0000003f, 0 .2em 3em 1em $color3_shadow !important;
+    transform: translateY(.1em);
+  }
 }
 
 .pink {
   color: $color3;
 }
 
+
 .spin {
   display: inline-block;
-  transition: all 600ms $out_bounce;
+  transition: all 700ms $out_bounce;
+}
+
+.spin_o {
+  transform: rotateY(180deg) !important;
+  color: $color3;
 }
 
 .nobreak {

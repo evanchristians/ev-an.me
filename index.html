@@ -19,12 +19,22 @@
     <div class="wrapper">
         <h1>Ev<span class="pink">a</span>n <br>Christi<span class="pink">a</span>ns</h1>
         <h3>Junior Fullstack Developer <span class="pink dot">&middot</span> UI/UX Enthusiast <span class="pink dot">&middot</span> Nerd</h3>
-        <h2>I A <span class="nobreak">PASSI<span class="spin">O</span>N</span> <span class="nobreak">F<span class="spin">O</span>R</span> BUILDING <span class="nobreak">FUNCTI<span class="spin">O</span>NAL</span> SYSTEMS<span class="pink">,</span>  <span class="nobreak">M<span class="spin">O</span>TI<span class="spin">O</span>N</span> DESIGN<span class="pink">,</span> AND MAKING USERS HAPPY<span class="pink">.</span></h2>
+        <h2 id="about_me">I A <span class="nobreak">PASSI<span class="spin" id="spin_1">O</span>N</span> <span class="nobreak">F<span class="spin" id="spin_2">O</span>R</span> BUILDING <span class="nobreak">FUNCTI<span class="spin" id="spin_3">O</span>NAL</span> SYSTEMS<span class="pink">,</span>  <span class="nobreak">M<span class="spin" id="spin_4">O</span>TI<span class="spin" id="spin_5">O</span>N</span> DESIGN<span class="pink">,</span> AND MAKING USERS HAPPY<span class="pink">.</span></h2>
         <button class="call_to_action">
             HIRE ME!
             <!-- <div class="info">evanryk@gmail.com</div> -->
         </button>
     </div>
 </body>
+<script>
+    $(document).ready(function() {
+        $(".spin").each(function(index) {
+            $(this).css("transition-delay", (20 * index) + "ms");
+        })
+        $("#about_me").mouseenter(function() {
+            $(".spin").addClass("spin_o");
+        })
+    })
+</script>
 </html>
 
