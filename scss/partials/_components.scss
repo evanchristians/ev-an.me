@@ -8,7 +8,7 @@
   border: none;
   background: $color3;
   margin: 1em 0;
-  transition: all 200ms $out_med;
+  transition: all 200ms ease-out;
   box-shadow: 0 1em 3em #ffffff04;
   cursor: pointer;
   &:focus {
