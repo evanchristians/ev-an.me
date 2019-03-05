@@ -149,7 +149,11 @@ nav a:before {
 }
 @media (max-width: 460px) {
   nav {
+    padding: 1em;
     justify-content: center;
+  }
+  nav a {
+    margin: 0 0.5em;
   }
 
   h1 {

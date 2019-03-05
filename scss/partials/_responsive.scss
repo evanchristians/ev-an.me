@@ -15,7 +15,11 @@
 
 @media (max-width: 460px) {
   nav {
+    padding: 1em;
     justify-content: center;
+    a {
+      margin: 0 .5em;
+    }
   }
   h1 {
     font-size: 4.5em;
