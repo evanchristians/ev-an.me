@@ -25,24 +25,60 @@
             <!-- <div class="info">evanryk@gmail.com</div> -->
             <div class="tooltip">evanryk@gmail</div>
         </button>
+        <!-- <div class="count">Hover count: 0</div> -->
     </div>
 </body>
 <script>
     $(document).ready(function() {
+        var count = 0;
+        $(".count").mouseenter(function(){
+            $(this).css("font-size", "1em");
+            setTimeout(function(){
+                $(".count").html("<div class='x'>x</div>Hover count: " + count);    
+            }, 500)
+        })
+        $(".count").click(function(){
+            $(this).css("font-size", ".7em");
+        })
+        function increaseCount() {
+            count++;
+            $(".count").html("<div class='x'>x</div>Hover count: " + count);
+            if (count >= 50 && count < 100) {
+                $(".count").css("background-color", "#f8f8f8");
+                $(".count").css("color", "#040404");
+                $(".count").css("font-weight", "300");
+            } else if (count >= 100 && count < 200) {
+                $(".count").css("background-color", "#303030");
+                $(".count").css("color", "#f8f8f8");
+                $(".count").css("font-weight", "200"); 
+            } else if (count >= 200) {
+                $(".count").css("background-color", "#f8f8f8");
+                $(".count").css("color", "#040404");
+                $(".count").css("font-weight", "300");
+            }
+        }
         $(".spin").each(function(index) {
             $(this).css("transition-delay", (20 * index) + "ms");
         })
-        
+
         $("#about_me").mouseenter(function() {
             $(".spin").addClass("spin_o");
         })
         $(".spin").mouseenter(function() {
+            increaseCount()
             var current = $(this);
             current.addClass("bounce_o");
             setTimeout(function(){
                 current.removeClass("bounce_o");
             }, 400)
         })
+        $("a").mouseenter(function(){
+            increaseCount();
+        })
+        $("button").mouseenter(function(){
+            increaseCount();
+        })
+
     })
 </script>
 </html>

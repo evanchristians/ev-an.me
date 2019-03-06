@@ -108,3 +108,55 @@
 .dot {
   font-weight: 300;
 }
+
+.count {
+
+  font-size: .7em;
+  position: absolute;
+  bottom: 3em;
+  right: 0;
+  font-family: $pop;
+  font-weight: 200;
+  background: #303030;
+  padding: .6em .7em;
+  border-radius: .5em;
+  transition: all 400ms $out_bounce;
+  box-shadow: 0 .2em .2em 0 #0000002f;
+  cursor: pointer;
+  z-index: 20;
+  &:hover .x {
+    transform: translate(0, -50%);
+    opacity: 1;
+  }
+}
+
+.x {
+  opacity: 0;
+  transition: all 300ms $inout_bounce;
+  position: absolute;
+  top: 50%;
+  left: -2em;
+  transform: translate(1em, -50%);
+  background: #ffffff22;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8em;
+  color: #040404;
+  cursor: pointer;
+  height: 1.4em;
+  width: 1.4em;
+  z-index: 2;
+  &:hover {
+    background: #ffffff54 !important;
+  }
+  // &:before {
+  //   position: absolute;
+  //   content: '';
+  //   width: 2em;
+  //   height: 2em;
+  //   top: 0;
+  //   left: 100%;
+  // }
+}
