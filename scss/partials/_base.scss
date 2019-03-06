@@ -29,10 +29,7 @@ h2 {
     margin: .2em 0;
     font-size: 4.5em;
     padding-right: 3em;
-    &:hover .spin {
-        transform: rotateY(180deg) !important;
-        color: $color3;
-    }
+    width: fit-content;
 }
 
 h3 {
