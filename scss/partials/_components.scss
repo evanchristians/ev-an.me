@@ -30,6 +30,9 @@
 .spin {
   display: inline-block;
   transition: all 600ms $out_bounce;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .nobreak {
