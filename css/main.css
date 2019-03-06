@@ -52,11 +52,11 @@ nav a {
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
   text-decoration: none;
+  margin-left: 0.5em;
   font-weight: 200;
-  margin-left: 2em;
   color: inherit;
   position: relative;
-  padding: 1em 0;
+  padding: 1em 0.5em;
   overflow: hidden;
 }
 nav a span {

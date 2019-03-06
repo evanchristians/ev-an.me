@@ -49,11 +49,11 @@ nav {
         font-family: $pop;
         font-size: 1.2em;
         text-decoration: none;
+        margin-left: .5em;
         font-weight: 200;
-        margin-left: 2em;
         color: inherit;
         position: relative;
-        padding: 1em 0;
+        padding: 1em .5em;
         overflow: hidden;
         span {
             transition: all 300ms $inout_med;
