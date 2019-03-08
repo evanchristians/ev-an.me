@@ -13,7 +13,7 @@
         <div class="wrapper">
             <nav>
                 <a href="index.html">AB<span>O</span>UT</a>
-                <a href="work.html">W<span>O</span>RK</a>
+                <a href="#work">W<span>O</span>RK</a>
                 <a href="contact.html">C<span>O</span>NTACT</a>
             </nav>
         </div>
@@ -125,6 +125,9 @@
             increaseCount();
         })
 
+        $(".call_to_action").click(function(){
+            location.href="mailto:evanryk@gmail.com";
+        })
         // $(window).resize(function() {
         //     console.log($(window).width());
         //     if ($(window).width() <= 860) {

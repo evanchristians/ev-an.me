@@ -1,8 +1,8 @@
 .wrapper {
     display: block;
-    max-width: 1080px;
+    max-width: 1240px;
     padding: 0 1.5em;
-    padding-bottom: 4em;
+    padding-bottom: 2em;
     position: relative;
     margin: 0 auto;
 }
@@ -17,7 +17,7 @@
 
 .section__work {
     position: relative;
-    min-height: 100vh;
+    padding-top: 2em;
     h2 {
         margin: 0 auto;
         padding: 0;
@@ -49,11 +49,11 @@
             display: block;
             border-radius: .5em;
             box-shadow: 0 .2em 3em #0f0f0f35;
-            transition: all 300ms $out_bounce;
-            &:hover {
-                transform: translateY(-.25em);
-                box-shadow: 0 .2em 5em #0f0f0f35;
-            }
+            // transition: all 300ms $out_bounce;
+            // &:hover {
+            //     transform: translateY(-.25em);
+            //     box-shadow: 0 .2em 5em #0f0f0f35;
+            // }
         }
         .desk{
             width: 90%;
@@ -61,7 +61,7 @@
         .mob {
             position: absolute;
             width: 30%;
-            bottom: 0;
+            bottom: -1em;
             right: 0;
         }
     }

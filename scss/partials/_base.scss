@@ -1,6 +1,11 @@
 *, :before, :after {
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: $color5;
     margin: 0;
@@ -32,7 +37,7 @@ h2 {
     display: block;
     margin: .2em 0;
     font-size: 4.5em;
-    padding-right: 5em;
+    max-width: 12em;
     width: fit-content;
 }
 
@@ -46,7 +51,7 @@ nav {
     display: flex;
     width: 100%;
     margin: 0 0 1em 0;
-    padding: 2em 0;
+    padding: 2em 4em;
     justify-content: flex-end;
     font-size: .9em;
     a {
@@ -54,7 +59,7 @@ nav {
         font-size: 1.2em;
         text-decoration: none;
         margin-left: .5em;
-        font-weight: 200;
+        font-weight: 100;
         color: inherit;
         position: relative;
         padding: 1em .6em;
