@@ -1,21 +1,34 @@
-// fonts
+// FONTS -----------------------------
 
 $ws: 'Work Sans', sans-serif;
 
 $pop: 'Poppins', sans-serif;
+
+// EASINGS -------------------------------
+
 $out_med: cubic-bezier(0.165, 0.84, 0.44, 1);
 $out_ex: cubic-bezier(0.19, 1, 0.22, 1);
 $inout_med: cubic-bezier(0.645, 0.045, 0.355, 1);
 $out_bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 $inout_bounce: cubic-bezier(0.68, 0, 0.265, 1.90); 
 $in_med: cubic-bezier(0.895, 0.03, 0.685, 0.22);
-// colors
+
+// COLORS --------------------------
 
 $color1: rgba(206, 236, 151, 1);
 $color2: rgba(244, 179, 147, 1);
-$color3: rgba(252, 96, 168, 1);
-$color3_hilite: rgb(236, 77, 152);
-$color3_shadow: rgba(252, 96, 168, .15);
 $color4: rgba(122, 40, 203, 1);
-$color5: rgba(73, 67, 104, 1);
+$color5: #35304C;
 $white: #f9f9f9;
+
+// PINK ------------------------------
+
+$color3: #fc62aa;
+$color3_hilite: #ec4d98;
+$color3_shadow: #fc60a826;
+
+// YELLOW ------------------------
+
+// $color3: #FFB444;
+// $color3_hilite: #F2A32E;
+// $color3_shadow: #FFB44426;

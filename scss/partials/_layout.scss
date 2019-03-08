@@ -33,7 +33,7 @@
     grid-template-columns: 1fr 1.5fr;
     grid-gap: 2em;
     width: 100%;
-    font-weight: 100;
+    font-weight: 200;
     font-family: $ws;
     font-size: 1.2em;
     .grid__item {
@@ -47,8 +47,8 @@
             width: auto;
             height: auto;
             display: block;
-            border-radius: .5em;
-            box-shadow: 0 .2em 3em #0f0f0f35;
+            border-radius: .6em;
+            box-shadow: 0 .2em 4em #0f0f0f3a;
             // transition: all 300ms $out_bounce;
             // &:hover {
             //     transform: translateY(-.25em);

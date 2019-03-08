@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300|Work+Sans:100,400");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300|Work+Sans:100,200");
 *, :before, :after {
   box-sizing: border-box;
 }
@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background: #494368;
+  background: #35304C;
   margin: 0;
   padding: 0;
   color: #f9f9f9;
@@ -55,7 +55,7 @@ nav {
   margin: 0 0 1em 0;
   padding: 2em 4em;
   justify-content: flex-end;
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 nav a {
   font-family: "Poppins", sans-serif;
@@ -77,12 +77,12 @@ nav a:hover:before {
   transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 nav a:hover span {
-  color: #fc60a8;
+  color: #fc62aa;
 }
 nav a:before {
   transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
   content: "";
-  background: #fc60a8;
+  background: #fc62aa;
   height: 0.2em;
   width: 0;
   position: absolute;
@@ -127,7 +127,7 @@ nav a:before {
   grid-template-columns: 1fr 1.5fr;
   grid-gap: 2em;
   width: 100%;
-  font-weight: 100;
+  font-weight: 200;
   font-family: "Work Sans", sans-serif;
   font-size: 1.2em;
 }
@@ -143,8 +143,8 @@ nav a:before {
   width: auto;
   height: auto;
   display: block;
-  border-radius: 0.5em;
-  box-shadow: 0 0.2em 3em #0f0f0f35;
+  border-radius: 0.6em;
+  box-shadow: 0 0.2em 4em #0f0f0f3a;
 }
 .grid__work .grid__item .desk {
   width: 90%;
@@ -170,18 +170,18 @@ nav a:before {
   padding: 0.4em 0.8em;
   border-radius: 2em;
   border: none;
-  background: #fc60a8;
+  background: #fc62aa;
   margin: 1em 0;
-  transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 0 1em 3em #ffffff04, 0 0.1em 0.2em #0000000f, 0 0.2em 3em 0.5em rgba(252, 96, 168, 0.15);
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 1em 3em #ffffff04, 0 0.1em 0.2em #0000000f, 0 0.2em 3em 0.5em #fc60a826;
   cursor: pointer;
 }
 .call_to_action:focus {
   outline: none;
-  box-shadow: 0 1em 3em 1em #ffffff04, 0 0.1em 0.2em #0000003f, 0 0.2em 3em 1em rgba(252, 96, 168, 0.15) !important;
+  box-shadow: 0 1em 3em 1em #ffffff04, 0 0.1em 0.2em #0000003f, 0 0.2em 3em 1em #fc60a826 !important;
 }
 .call_to_action:hover {
-  box-shadow: 0 1em 3em 1em #ffffff04, 0 0.1em 0.2em #0000003f, 0 0.2em 3em 1.1em rgba(252, 96, 168, 0.15);
+  box-shadow: 0 1em 3em 1em #ffffff04, 0 0.1em 0.2em #0000003f, 0 0.2em 3em 0.8em #fc60a826;
   background: #ec4d98;
 }
 .call_to_action:hover .tooltip {
@@ -194,7 +194,7 @@ nav a:before {
   transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .call_to_action:active {
-  box-shadow: 0 1em 3em 1em #ffffff04, 0 0em 0em #0000003f, 0 0.2em 3em 1.5em rgba(252, 96, 168, 0.15) !important;
+  box-shadow: 0 1em 3em 1em #ffffff04, 0 0em 0em #0000003f, 0 0.2em 3em 1.5em #fc60a826 !important;
   transform: translateY(0.1em);
 }
 
@@ -233,7 +233,7 @@ nav a:before {
 }
 
 .pink {
-  color: #fc60a8;
+  color: #fc62aa;
 }
 
 .spin {
@@ -258,7 +258,7 @@ nav a:before {
 }
 .spin_o {
   transform: rotateY(180deg);
-  color: #fc60a8;
+  color: #fc62aa;
 }
 
 .nobreak {
@@ -301,7 +301,7 @@ nav a:before {
   height: 3px;
   width: 50%;
   border-radius: 2em;
-  background: #fc60a8;
+  background: #fc62aa;
 }
 
 .x {
@@ -331,13 +331,13 @@ nav a:before {
   padding: 0.4em 1em;
   width: fit-content;
   border-radius: 2em;
-  border: 2px solid #fc60a8;
+  border: 2px solid #fc62aa;
   margin-top: 2em;
-  transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: pointer;
 }
 .view:hover {
-  background: #fc60a8;
+  background: #fc62aa;
 }
 
 @media (max-width: 860px) {

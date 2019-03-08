@@ -10,7 +10,7 @@
   border: none;
   background: $color3;
   margin: 1em 0;
-  transition: all 300ms $out_med;
+  transition: all 400ms $out_med;
   box-shadow: 0 1em 3em #ffffff04, 0 .1em .2em #0000000f, 0 .2em 3em .5em $color3_shadow ;
   cursor: pointer;
   &:focus {
@@ -19,7 +19,7 @@
     // transform: translateY(-.05em);
   }
   &:hover {
-    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em 1.1em $color3_shadow;
+    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em .8em $color3_shadow;
     // transform: translateY(-.05em);
     background: $color3_hilite;
     & .tooltip {
@@ -182,10 +182,7 @@
   border-radius: 2em;
   border: 2px solid $color3;
   margin-top: 2em;
-  // position: absolute;
-  // bottom: 2em;
-  // left: 0;
-  transition: all 200ms $inout_med;
+  transition: all 200ms $out_med;
   cursor: pointer;
   &:hover {
     background: $color3;
