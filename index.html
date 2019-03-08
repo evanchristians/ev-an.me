@@ -10,23 +10,69 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">AB<span>O</span>UT</a>
-            <a href="work.html">W<span>O</span>RK</a>
-            <a href="contact.html">C<span>O</span>NTACT</a>
-        </nav>
+        <div class="wrapper">
+            <nav>
+                <a href="index.html">AB<span>O</span>UT</a>
+                <a href="work.html">W<span>O</span>RK</a>
+                <a href="contact.html">C<span>O</span>NTACT</a>
+            </nav>
+        </div>
     </header>
-    <div class="wrapper">
-        <h1>Ev<span class="pink">a</span>n <br>Christi<span class="pink">a</span>ns</h1>
-        <h3>Junior Fullstack Developer <span class="pink dot">&middot</span> UI/UX Enthusiast</h3>
-        <h2 id="about_me">I A <span class="nobreak">PASSI<span class="spin" id="spin_1">O</span>N</span> <span class="nobreak">F<span class="spin" id="spin_2">O</span>R</span> BUILDING <span class="nobreak">FUNCTI<span class="spin" id="spin_3">O</span>NAL</span> SYSTEMS<span class="pink">,</span>  <span class="nobreak">M<span class="spin" id="spin_4">O</span>TI<span class="spin" id="spin_5">O</span>N</span> DESIGN<span class="pink">,</span> AND MAKING USERS HAPPY<span class="pink">.</span></h2>
-        <button class="call_to_action">
-            LET'S TALK
-            <!-- <div class="info">evanryk@gmail.com</div> -->
-            <div class="tooltip">evanryk@gmail</div>
-        </button>
-        <!-- <div class="count">Hover count: 0</div> -->
-    </div>
+    <section class="section__hero" id="hero">
+        <div class="wrapper">
+            <h1>Ev<span class="pink">a</span>n <br>Christi<span class="pink">a</span>ns</h1>
+            <h3>Junior Fullstack Developer <span class="pink dot">&middot</span> UI/UX Enthusiast</h3>
+            <h2 id="about_me">I A <span class="nobreak">PASSI<span class="spin" id="spin_1">O</span>N</span> <span class="nobreak">F<span class="spin" id="spin_2">O</span>R</span> BUILDING <span class="nobreak">FUNCTI<span class="spin" id="spin_3">O</span>NAL</span> SYSTEMS<span class="pink">,</span>  <span class="nobreak">M<span class="spin" id="spin_4">O</span>TI<span class="spin" id="spin_5">O</span>N</span> DESIGN<span class="pink">,</span> AND MAKING USERS HAPPY<span class="pink">.</span></h2>
+            <button class="call_to_action">
+                LET'S TALK
+                <!-- <div class="info">evanryk@gmail.com</div> -->
+                <div class="tooltip">evanryk@gmail</div>
+            </button>
+            <!-- <div class="count">Hover count: 0</div> -->
+        </div>
+    </section>
+    <section class="section__work" id="work">
+        <div class="wrapper">
+            <h2 class="under">W<span class="pink">O</span>RK</h2>
+            <div class="grid__work" >
+                <div class="grid__item">
+                    <h3 class="under">HotelBooking</h3>
+                    <p>
+                        A mock hotel booking app built using <span class="pink">PHP</span> and <span class="pink">MySql</span> for the back-end and <span class="pink">SASS</span> and <span class="pink">JQuery</span> for the front-end. The app allows users to <span class="pink">register</span> accounts to the database,
+                        while <span class="pink">checking</span> for problematic <span class="pink">inputs</span> and returning <span class="pink">errors</span> to the user where applicable. The app checks for double bookings by a single user and calculates price based on hotel, number of rooms and number of nights.
+                    </p>
+                </div>
+                <div class="grid__item">
+                    <img src="assets/calm-escarpment-26710.herokuapp.com_register.php.png" alt="" class="desk">
+                    <img src="assets/calm-escarpment-26710.herokuapp.com_book.php(iPhone 6_7_8 Plus).png" alt="" class="mob">
+                </div>
+            </div>
+            <div class="grid__work alt">
+                <div class="grid__item">
+                    <img src="assets/evanchristians-php-quiz.herokuapp.com_results.php.png" alt="" class="desk">
+                    <img src="assets/evanchristians-php-quiz.herokuapp.com_(iPhone 6_7_8 Plus).png" alt="" class="mob">
+                </div>
+                <div class="grid__item">
+                    <h3 class="under">Are You A Qu<span class="pink">?</span>zard</h3>
+                    <p>
+                        A quiz app build to test my knowledge of <span class="pink">PHP</span> form handling, functions and arrays. The app allows the user to <span class="pink">input</span> their name to be recalled at the <span class="pink">results</span> page, which calculates the number of answers the user answered <span class="pink">correctly</span> out of the total number of questions. The app also gives the user the option to <span class="pink">view</span> which of their answers were <span class="pink">incorrect</span> and view the corrections.
+                    </p>
+                </div>
+            </div>
+            <div class="grid__work">
+                <div class="grid__item">
+                    <h3 class="under">DREAMSHARE</h3>
+                    <p>
+                        A <span class="pink">responsive</span>, front-end-only site built from a <span class="pink">design</span> provided as part of <span class="pink">challenge</span> for an <span class="pink">internship</span> I applied for in March 2019. The site was built using <span class="pink">HTML</span>, <span class="pink">SASS</span> and <span class="pink">JQuery</span>. I used <span class="pink">JQuery</span> to make a <span class="pink">parallax</span> effect on the hero image on scroll, and <span class="pink">::after</span> and <span class="pink">::before</span> pseudo-classes for hover animations.
+                    </p>
+                </div>
+                <div class="grid__item">
+                    <img src="assets/evanchristians.github.io_lima_bean_.png" alt="" class="desk">
+                    <img src="assets/evanchristians.github.io_lima_bean_(iPhone 6_7_8 Plus).png" alt="" class="mob">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script>
     $(document).ready(function() {
@@ -78,6 +124,16 @@
         $("button").mouseenter(function(){
             increaseCount();
         })
+
+        // $(window).resize(function() {
+        //     console.log($(window).width());
+        //     if ($(window).width() <= 860) {
+        //         $("#gridNoAlt").addClass("alt");
+        //     }
+        //     else {
+        //         $("#gridNoAlt").removeClass("alt");
+        //     }
+        // });
 
     })
 </script>

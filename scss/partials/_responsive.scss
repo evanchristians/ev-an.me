@@ -1,3 +1,15 @@
+@media (max-width: 860px) {
+  .grid__work {
+    max-width: 36em;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    padding-top: 2em;
+  }
+  .alt {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 680px) {
   h1 {
     font-size: 5em;
@@ -5,7 +17,17 @@
   h2 {
     font-size: 3em;
   }
+  .section__work {
+    font-size: .8em;
+    h2 {
+      font-size: 3em;
+    }
+    p {
+      padding-right: 2em;
+    }
+  }
 }
+
 
 @media (max-width: 520px) {
   body {
@@ -18,7 +40,7 @@
     padding: 1em;
     justify-content: center;
     a {
-      margin: 0 .5em;
+      margin: 0 .2em;
     }
   }
   h1 {

@@ -130,6 +130,21 @@
   }
 }
 
+.under {
+  position: relative !important;
+  width: fit-content;
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -.25em;
+    height: 3px;
+    width: 50%;
+    border-radius: 2em;
+    background: $color3;
+  }
+}
+
 .x {
   opacity: 0;
   transition: all 300ms $inout_bounce;

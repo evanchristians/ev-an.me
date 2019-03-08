@@ -4,10 +4,14 @@
 body {
     background: $color5;
     margin: 0;
-    padding: 0 2em;
+    padding: 0;
     color: $white;
     font-family: $ws;
     font-size: 14px;
+}
+
+header .wrapper {
+    padding: 0;
 }
 
 h1 {
@@ -28,7 +32,7 @@ h2 {
     display: block;
     margin: .2em 0;
     font-size: 4.5em;
-    padding-right: 3em;
+    padding-right: 5em;
     width: fit-content;
 }
 
@@ -41,10 +45,10 @@ h3 {
 nav {
     display: flex;
     width: 100%;
-    max-width: 60em;
-    margin: 0 auto;
+    margin: 0 0 1em 0;
     padding: 2em 0;
     justify-content: flex-end;
+    font-size: .9em;
     a {
         font-family: $pop;
         font-size: 1.2em;
@@ -53,7 +57,7 @@ nav {
         font-weight: 200;
         color: inherit;
         position: relative;
-        padding: 1em .5em;
+        padding: 1em .6em;
         overflow: hidden;
         span {
             transition: all 300ms $inout_med;
