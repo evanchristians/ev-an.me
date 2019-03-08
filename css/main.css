@@ -332,11 +332,22 @@ nav a:before {
     max-width: 36em;
     margin: 0 auto;
     grid-template-columns: 1fr;
-    padding-top: 2em;
+    padding-top: 4em;
+    padding-bottom: 0;
+    grid-gap: 0;
+  }
+  .grid__work .grid__item:nth-child(2) {
+    grid-area: 1/1;
   }
 
   .alt {
     grid-template-columns: 1fr;
+  }
+  .alt .grid__item:nth-child(1) {
+    grid-area: 1/1;
+  }
+  .alt .grid__item:nth-child(2) {
+    grid-area: 2/1;
   }
 }
 @media (max-width: 680px) {
@@ -348,9 +359,6 @@ nav a:before {
     font-size: 3em;
   }
 
-  .section__work {
-    font-size: 0.8em;
-  }
   .section__work h2 {
     font-size: 3em;
   }
