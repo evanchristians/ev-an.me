@@ -175,3 +175,19 @@
   //   left: 100%;
   // }
 }
+
+.view {
+  padding: .4em 1em;
+  width: fit-content;
+  border-radius: 2em;
+  border: 2px solid $color3;
+  margin-top: 2em;
+  // position: absolute;
+  // bottom: 2em;
+  // left: 0;
+  transition: all 200ms $inout_med;
+  cursor: pointer;
+  &:hover {
+    background: $color3;
+  }
+}

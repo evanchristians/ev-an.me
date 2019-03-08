@@ -21,6 +21,7 @@ header .wrapper {
 }
 
 h1 {
+  margin-top: 0;
   word-break: break-all;
 }
 
@@ -44,7 +45,7 @@ h2 {
 
 h3 {
   font-weight: 100;
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-family: "Poppins", sans-serif;
 }
 
@@ -105,7 +106,7 @@ nav a:before {
   position: relative;
 }
 .section__hero h3 {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .section__work {
@@ -324,6 +325,19 @@ nav a:before {
 }
 .x:hover {
   background: #ffffff54 !important;
+}
+
+.view {
+  padding: 0.4em 1em;
+  width: fit-content;
+  border-radius: 2em;
+  border: 2px solid #fc60a8;
+  margin-top: 2em;
+  transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+}
+.view:hover {
+  background: #fc60a8;
 }
 
 @media (max-width: 860px) {
