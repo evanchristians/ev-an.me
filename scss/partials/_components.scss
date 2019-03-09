@@ -4,7 +4,7 @@
   font-size: 1.65em;
   font-weight: 200;
   font-family: $pop;
-  color: $white;
+  color: $grey;
   padding: .4em .8em;
   border-radius: 2em;
   border: none;
@@ -15,11 +15,11 @@
   cursor: pointer;
   &:focus {
     outline: none;
-    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em 1em $primary_tspt !important;
+    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000000f, 0 .2em 3em 1em $primary_tspt !important;
     // transform: translateY(-.05em);
   }
   &:hover {
-    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em .8em $primary_tspt;
+    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000000f, 0 .2em 3em .8em $primary_tspt;
     // transform: translateY(-.05em);
     background: $primary_focus;
     & .tooltip {
@@ -41,7 +41,7 @@
 .tooltip {
   font-size: .65em;
   background: #303030;
-  color: $white;
+  color: $grey;
   padding: .6em;
   border-radius: .5em;
   position: absolute;
@@ -185,6 +185,7 @@
   transition: all 200ms $out_med;
   cursor: pointer;
   &:hover {
+    color: $grey;
     background: $primary_main;
   }
 }
