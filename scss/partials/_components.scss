@@ -2,7 +2,7 @@
   z-index: 2;
   position: relative;
   font-size: 1.65em;
-  font-weight: 200;
+  font-weight: 300;
   font-family: $pop;
   color: $grey;
   padding: .4em .8em;
@@ -11,11 +11,11 @@
   background: $primary_main;
   margin: 1em 0;
   transition: all 400ms $out_med;
-  box-shadow: 0 1em 3em #ffffff04, 0 .1em .2em #0000000f, 0 .2em 3em .5em $primary_tspt ;
+  box-shadow: 0 1em 3em #ffffff04, 0 .1em .2em #0000000f, 0 .2em 3em .25em $primary_tspt ;
   cursor: pointer;
   &:focus {
     outline: none;
-    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000000f, 0 .2em 3em 1em $primary_tspt !important;
+    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000000f, 0 .2em 3em .5em $primary_tspt !important;
     // transform: translateY(-.05em);
   }
   &:hover {
@@ -50,7 +50,7 @@
   opacity: 0;
   left: 50%;
   transform: translate(-50%, -.2em);
-  font-weight: 100;
+  font-weight: 300;
   font-family: $pop;
   z-index: -1;
   &::before {
@@ -137,7 +137,7 @@
     content: '';
     position: absolute;
     right: 0;
-    bottom: -.25em;
+    bottom: -5px;
     height: 3px;
     width: 50%;
     border-radius: 2em;
@@ -183,7 +183,9 @@
   border: 2px solid $primary_main;
   margin-top: 2em;
   transition: all 200ms $out_med;
+  color: $primary_main;
   cursor: pointer;
+  font-weight: 400;
   &:hover {
     color: $grey;
     background: $primary_main;

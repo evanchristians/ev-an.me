@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300|Work+Sans:100,200");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300|Work+Sans:100,300,400");
 *, :before, :after {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -44,7 +46,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 100;
+  font-weight: 200;
   font-size: 1.75em;
   font-family: "Poppins", sans-serif;
 }
@@ -62,7 +64,7 @@ nav a {
   font-size: 1.2em;
   text-decoration: none;
   margin-left: 0.5em;
-  font-weight: 100;
+  font-weight: 200;
   color: inherit;
   position: relative;
   padding: 1em 0.6em;
@@ -83,20 +85,24 @@ nav a:before {
   transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
   content: "";
   background: #FF934F;
-  height: 0.2em;
+  height: 3px;
   width: 0;
   position: absolute;
-  bottom: 0.75em;
+  bottom: 13px;
   right: 100%;
   z-index: -1;
   border-radius: 1em;
 }
 
 footer {
-  padding: 3em 0;
-  background: #555;
+  padding: 3em 0 0 0;
+}
+footer .wrapper {
+  min-height: 20em;
+  background: #a0a0a0;
   color: #f9f9f9;
-  min-height: 50vh;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
 }
 
 .wrapper {
@@ -135,7 +141,7 @@ footer {
   grid-template-columns: 1fr 1.5fr;
   grid-gap: 2em;
   width: 100%;
-  font-weight: 200;
+  font-weight: 300;
   font-family: "Work Sans", sans-serif;
   font-size: 1.2em;
 }
@@ -152,7 +158,7 @@ footer {
   height: auto;
   display: block;
   border-radius: 0.6em;
-  box-shadow: 0 0.25em 5em #0f0f0f26;
+  box-shadow: 0 0.25em 5em 0.25em #0f0f0f1a;
 }
 .grid__work .grid__item .desk {
   width: 90%;
@@ -172,7 +178,7 @@ footer {
   z-index: 2;
   position: relative;
   font-size: 1.65em;
-  font-weight: 200;
+  font-weight: 300;
   font-family: "Poppins", sans-serif;
   color: #f9f9f9;
   padding: 0.4em 0.8em;
@@ -181,12 +187,12 @@ footer {
   background: #FF934F;
   margin: 1em 0;
   transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 0 1em 3em #ffffff04, 0 0.1em 0.2em #0000000f, 0 0.2em 3em 0.5em #FF934F26;
+  box-shadow: 0 1em 3em #ffffff04, 0 0.1em 0.2em #0000000f, 0 0.2em 3em 0.25em #FF934F26;
   cursor: pointer;
 }
 .call_to_action:focus {
   outline: none;
-  box-shadow: 0 1em 3em 1em #ffffff04, 0 0.1em 0.2em #0000000f, 0 0.2em 3em 1em #FF934F26 !important;
+  box-shadow: 0 1em 3em 1em #ffffff04, 0 0.1em 0.2em #0000000f, 0 0.2em 3em 0.5em #FF934F26 !important;
 }
 .call_to_action:hover {
   box-shadow: 0 1em 3em 1em #ffffff04, 0 0.1em 0.2em #0000000f, 0 0.2em 3em 0.8em #FF934F26;
@@ -218,7 +224,7 @@ footer {
   opacity: 0;
   left: 50%;
   transform: translate(-50%, -0.2em);
-  font-weight: 100;
+  font-weight: 300;
   font-family: "Poppins", sans-serif;
   z-index: -1;
 }
@@ -305,7 +311,7 @@ footer {
   content: "";
   position: absolute;
   right: 0;
-  bottom: -0.25em;
+  bottom: -5px;
   height: 3px;
   width: 50%;
   border-radius: 2em;
@@ -342,7 +348,9 @@ footer {
   border: 2px solid #FF934F;
   margin-top: 2em;
   transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  color: #FF934F;
   cursor: pointer;
+  font-weight: 400;
 }
 .view:hover {
   color: #f9f9f9;
