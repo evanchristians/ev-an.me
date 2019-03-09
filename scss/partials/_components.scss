@@ -8,20 +8,20 @@
   padding: .4em .8em;
   border-radius: 2em;
   border: none;
-  background: $color3;
+  background: $primary_main;
   margin: 1em 0;
   transition: all 400ms $out_med;
-  box-shadow: 0 1em 3em #ffffff04, 0 .1em .2em #0000000f, 0 .2em 3em .5em $color3_shadow ;
+  box-shadow: 0 1em 3em #ffffff04, 0 .1em .2em #0000000f, 0 .2em 3em .5em $primary_tspt ;
   cursor: pointer;
   &:focus {
     outline: none;
-    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em 1em $color3_shadow !important;
+    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em 1em $primary_tspt !important;
     // transform: translateY(-.05em);
   }
   &:hover {
-    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em .8em $color3_shadow;
+    box-shadow: 0 1em 3em 1em #ffffff04, 0 .1em .2em #0000003f, 0 .2em 3em .8em $primary_tspt;
     // transform: translateY(-.05em);
-    background: $color3_hilite;
+    background: $primary_focus;
     & .tooltip {
       opacity: 1;
       transform: translate(-50%, -1em);
@@ -33,7 +33,7 @@
     }
   }
   &:active {
-    box-shadow: 0 1em 3em 1em #ffffff04, 0 0em 0em #0000003f, 0 .2em 3em 1.5em $color3_shadow !important;
+    box-shadow: 0 1em 3em 1em #ffffff04, 0 0em 0em #0000003f, 0 .2em 3em 1.5em $primary_tspt !important;
     transform: translateY(.1em);
   }
 }
@@ -73,7 +73,7 @@
 }
 
 .pink {
-  color: $color3;
+  color: $primary_main;
 }
 
 
@@ -98,7 +98,7 @@
 
 .spin_o {
   transform: rotateY(180deg);
-  color: $color3;
+  color: $primary_main;
 }
 
 .nobreak {
@@ -141,7 +141,7 @@
     height: 3px;
     width: 50%;
     border-radius: 2em;
-    background: $color3;
+    background: $primary_main;
   }
 }
 
@@ -180,11 +180,11 @@
   padding: .4em 1em;
   width: fit-content;
   border-radius: 2em;
-  border: 2px solid $color3;
+  border: 2px solid $primary_main;
   margin-top: 2em;
   transition: all 200ms $out_med;
   cursor: pointer;
   &:hover {
-    background: $color3;
+    background: $primary_main;
   }
 }

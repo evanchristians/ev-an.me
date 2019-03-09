@@ -5,18 +5,24 @@
     grid-template-columns: 1fr;
     padding-top: 4em;
     padding-bottom: 0;
-    grid-gap: 0;
     .grid__item:nth-child(2) {
       grid-area: 1/1;
+    }
+    .grid__item:nth-child(1) {
+      padding-bottom: 3em;
+      border-bottom: 1px solid $primary_tspt;
     }
   }
   .alt {
     grid-template-columns: 1fr;
     .grid__item:nth-child(1) {
       grid-area: 1/1;
+      border-bottom: none;
     }
     .grid__item:nth-child(2) {
       grid-area: 2/1;
+      padding-bottom: 3em;
+      border-bottom: 1px solid $primary_tspt;
     }
   }
 
@@ -32,9 +38,6 @@
   .section__work {
     h2 {
       font-size: 2.5em;
-    }
-    p {
-      padding-right: 2em;
     }
   }
 }
