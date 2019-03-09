@@ -95,7 +95,7 @@ nav a:before {
 }
 
 footer {
-  padding: 3em 0 0 0;
+  padding: 3em 1em 0 1em;
 }
 footer .wrapper {
   min-height: 20em;
@@ -388,11 +388,13 @@ footer .wrapper {
 }
 @media (max-width: 680px) {
   h1 {
+    font-weight: 200;
     font-size: 5em;
   }
 
   h2 {
     font-size: 3em;
+    font-weight: 200;
   }
 
   .section__work h2 {
@@ -415,10 +417,6 @@ footer .wrapper {
 
   h1 {
     font-size: 4em;
-  }
-
-  h2 {
-    font-size: 2.5em;
   }
 }
 
