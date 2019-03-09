@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Under Construction...</title>
+    <title>Evan Christians | Fullstack Dev</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
             <nav>
                 <a href="index.html">AB<span>O</span>UT</a>
                 <a href="#work">W<span>O</span>RK</a>
-                <a href="contact.html">C<span>O</span>NTACT</a>
+                <a href="#contact">C<span>O</span>NTACT</a>
             </nav>
         </div>
     </header>
@@ -41,7 +42,7 @@
                         A mock hotel booking app built using <span class="pink">PHP</span> and <span class="pink">MySql</span> for the back-end and <span class="pink">SASS</span> and <span class="pink">JQuery</span> for the front-end. The app allows users to <span class="pink">register</span> accounts to the database,
                         while <span class="pink">checking</span> for problematic <span class="pink">inputs</span> and returning <span class="pink">errors</span> to the user where applicable. The app checks for double bookings by a single user and calculates price based on hotel, number of rooms and number of nights.
                     </p>
-                    <div class="view">View Site</div>
+                    <div class="view" id="hotel">View Site</div>
                 </div>
                 <div class="grid__item">
                     <img src="assets/calm-escarpment-26710.herokuapp.com_register.php.png" alt="" class="desk">
@@ -58,16 +59,16 @@
                     <p>
                         A quiz app build to test my knowledge of <span class="pink">PHP</span> form handling, functions and arrays. The app allows the user to <span class="pink">input</span> their name to be recalled at the <span class="pink">results</span> page, which calculates the number of answers the user answered <span class="pink">correctly</span> out of the total number of questions. The app also gives the user the option to <span class="pink">view</span> which of their answers were <span class="pink">incorrect</span> and view the corrections.
                     </p>
-                    <div class="view">View Site</div>
+                    <div class="view" id="quiz">View Site</div>
                 </div>
             </div>
             <div class="grid__work">
                 <div class="grid__item">
                     <h3 class="under">DREAMSHARE</h3>
                     <p>
-                        A <span class="pink">responsive</span>, front-end-only site built from a <span class="pink">design</span> provided as part of <span class="pink">challenge</span> for an <span class="pink">internship</span> I applied for in March 2019. The site was built using <span class="pink">HTML</span>, <span class="pink">SASS</span> and <span class="pink">JQuery</span>. I used <span class="pink">JQuery</span> to make a <span class="pink">parallax</span> effect on the hero image on scroll, and <span class="pink">::after</span> and <span class="pink">::before</span> pseudo-classes for hover animations.
+                        A <span class="pink">responsive</span>, front-end-only site built from a <span class="pink">design</span> provided as part of <span class="pink">challenge</span> for an <span class="pink">internship</span> I applied for in February 2019. The site was built using <span class="pink">HTML</span>, <span class="pink">SASS</span> and <span class="pink">JQuery</span>. I used <span class="pink">JQuery</span> to make a <span class="pink">parallax</span> effect on the hero image on scroll, and <span class="pink">::after</span> and <span class="pink">::before</span> pseudo-classes for hover animations.
                     </p>
-                    <div class="view">View Site</div>
+                    <div class="view" id="dream">View Site</div>
                 </div>
                 <div class="grid__item">
                     <img src="assets/evanchristians.github.io_lima_bean_.png" alt="" class="desk">
@@ -89,11 +90,15 @@
             </div> -->
         </div>
     </section>
-    <footer>
+    <footer id="contact">
         <div class="wrapper">
-            <!-- <h3>This is the footer</h3>
-            <h3>Socials go here</h3>
-            <h3>This is my copyright</h3> -->
+            <div class="socials">
+                <a href="https://trello.com/evanchristians" target="_blank"><i class="fab fa-trello"></i></a>
+                <a href="https://github.com/evanchristians" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://dribbble.com/evanchristians" target="_blank"><i class="fab fa-dribbble"></i></a>
+                <a href="https://www.linkedin.com/in/evan-christians-50ba30159/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="copy">Made With <strong>L<span class="heart">O</span>VE</strong> (& caffine)</div>
         </div>
     </footer>
 </body>
@@ -134,7 +139,7 @@
             $(".spin").addClass("spin_o");
         })
         $(".spin").mouseenter(function() {
-            increaseCount()
+            // increaseCount()
             var current = $(this);
             current.addClass("bounce_o");
             setTimeout(function(){
@@ -151,15 +156,17 @@
         $(".call_to_action").click(function(){
             location.href="mailto:evanryk@gmail.com";
         })
-        // $(window).resize(function() {
-        //     console.log($(window).width());
-        //     if ($(window).width() <= 860) {
-        //         $("#gridNoAlt").addClass("alt");
-        //     }
-        //     else {
-        //         $("#gridNoAlt").removeClass("alt");
-        //     }
-        // });
+        $("#dream").click(function(){
+            location.href="https://evanchristians.github.io/lima_bean/";
+        })
+        $("#quiz").click(function(){
+            location.href="https://evanchristians-php-quiz.herokuapp.com/";
+        })
+        $("#hotel").click(function(){
+            location.href="https://calm-escarpment-26710.herokuapp.com/";
+        })
+
+
 
     })
 </script>

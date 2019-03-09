@@ -96,8 +96,10 @@ nav {
 
 footer {
     padding: 3em 1em 0 1em;
+    text-align: center;
     .wrapper {        
-        min-height: 20em;
+        padding: 0;
+        min-height: 10em;
         background: $grey_bg;
         color: $grey;
         border-top-right-radius: 1em;

@@ -86,13 +86,13 @@
 }
 @keyframes bounce_o {
   0% {
-    transform: rotateY(180deg) translateY(0); 
+    transform: rotate(0deg) translateY(0); 
   }
   50% {
-    transform: rotateY(180deg) translateY(-.06em); 
+    transform: rotate(0deg) translateY(-.06em); 
   }
   100% {
-    transform: rotateY(180deg) translateY(0); 
+    transform: rotate(0deg) translateY(0); 
   }
 }
 
@@ -189,5 +189,53 @@
   &:hover {
     color: $grey;
     background: $primary_main;
+  }
+}
+.heart {
+  transition: all 500ms $inout_med;
+}
+.copy { 
+  font-size: .9em;
+  white-space: nowrap;
+  font-family: $pop;
+  font-weight: 300;
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  &:hover {
+    .heart {
+      color: $primary_main;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  font-size: .8em;
+  a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $grey;
+    text-decoration: none;
+    margin: 0 .5em;
+    padding: .75em;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    transition: all 200ms ease-in-out;    
+    overflow: hidden;
+    &:hover {
+      color: $primary_main;
+    }
+    .fab {
+      font-size: 2em;
+    }
   }
 }

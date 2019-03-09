@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300|Work+Sans:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,500|Work+Sans:100,300,400");
 *, :before, :after {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -96,10 +96,12 @@ nav a:before {
 
 footer {
   padding: 3em 1em 0 1em;
+  text-align: center;
 }
 footer .wrapper {
-  min-height: 20em;
-  background: #a0a0a0;
+  padding: 0;
+  min-height: 10em;
+  background: #404040;
   color: #f9f9f9;
   border-top-right-radius: 1em;
   border-top-left-radius: 1em;
@@ -261,13 +263,13 @@ footer .wrapper {
 
 @keyframes bounce_o {
   0% {
-    transform: rotateY(180deg) translateY(0);
+    transform: rotate(0deg) translateY(0);
   }
   50% {
-    transform: rotateY(180deg) translateY(-0.06em);
+    transform: rotate(0deg) translateY(-0.06em);
   }
   100% {
-    transform: rotateY(180deg) translateY(0);
+    transform: rotate(0deg) translateY(0);
   }
 }
 .spin_o {
@@ -355,6 +357,54 @@ footer .wrapper {
 .view:hover {
   color: #f9f9f9;
   background: #FF934F;
+}
+
+.heart {
+  transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.copy {
+  font-size: 0.9em;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.copy:hover .heart {
+  color: #FF934F;
+}
+
+.socials {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  font-size: 0.8em;
+}
+.socials a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f9f9f9;
+  text-decoration: none;
+  margin: 0 0.5em;
+  padding: 0.75em;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  transition: all 200ms ease-in-out;
+  overflow: hidden;
+}
+.socials a:hover {
+  color: #FF934F;
+}
+.socials a .fab {
+  font-size: 2em;
 }
 
 @media (max-width: 860px) {
