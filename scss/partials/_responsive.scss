@@ -5,6 +5,12 @@
     grid-template-columns: 1fr;
     padding-top: 4em;
     padding-bottom: 0;
+    grid-gap: 0;
+    .grid__item {
+      img {
+        box-shadow: 0 .25em 5em .25em #0f0f0f26;
+      }
+    }
     .grid__item:nth-child(2) {
       grid-area: 1/1;
     }

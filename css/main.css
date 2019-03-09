@@ -105,6 +105,7 @@ footer .wrapper {
   color: #f9f9f9;
   border-top-right-radius: 1em;
   border-top-left-radius: 1em;
+  box-shadow: 0 -0.5em 2em 0.5em #0f0f0f1a;
 }
 
 .wrapper {
@@ -160,7 +161,7 @@ footer .wrapper {
   height: auto;
   display: block;
   border-radius: 0.6em;
-  box-shadow: 0 0.25em 5em 0.25em #0f0f0f1a;
+  box-shadow: 0 0.25em 5em 0.25em #0f0f0f2a;
 }
 .grid__work .grid__item .desk {
   width: 90%;
@@ -414,6 +415,10 @@ footer .wrapper {
     grid-template-columns: 1fr;
     padding-top: 4em;
     padding-bottom: 0;
+    grid-gap: 0;
+  }
+  .grid__work .grid__item img {
+    box-shadow: 0 0.25em 5em 0.25em #0f0f0f26;
   }
   .grid__work .grid__item:nth-child(2) {
     grid-area: 1/1;
