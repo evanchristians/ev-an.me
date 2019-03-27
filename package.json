@@ -1,0 +1,30 @@
+{
+  "name": "ev-an.me",
+  "version": "1.0.0",
+  "description": "Version control for my personal website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanchristians/ev-an.me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evanchristians/ev-an.me/issues"
+  },
+  "homepage": "https://github.com/evanchristians/ev-an.me#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "sass": "^1.17.3"
+  }
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Evan Christians | Fullstack Dev</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
@@ -23,7 +23,7 @@
         <div class="wrapper">
             <h1>Ev<span class="pink">a</span>n <br>Christi<span class="pink">a</span>ns</h1>
             <h3>Junior Fullstack Developer <span class="pink dot">&middot</span> UI/UX Enthusiast</h3>
-            <h2 id="about_me">I A <span class="nobreak">PASSI<span class="spin" id="spin_1">O</span>N</span> <span class="nobreak">F<span class="spin" id="spin_2">O</span>R</span> BUILDING <span class="nobreak">FUNCTI<span class="spin" id="spin_3">O</span>NAL</span> SYSTEMS<span class="pink">,</span>  <span class="nobreak">M<span class="spin" id="spin_4">O</span>TI<span class="spin" id="spin_5">O</span>N</span> DESIGN<span class="pink">,</span> AND MAKING USERS HAPPY<span class="pink">.</span></h2>
+            <h2 id="about_me">I HAVE A <span class="nobreak">PASSI<span class="spin" id="spin_1">O</span>N</span> <span class="nobreak">F<span class="spin" id="spin_2">O</span>R</span> BUILDING <span class="nobreak">FUNCTI<span class="spin" id="spin_3">O</span>NAL</span> SYSTEMS<span class="pink">,</span>  <span class="nobreak">M<span class="spin" id="spin_4">O</span>TI<span class="spin" id="spin_5">O</span>N</span> DESIGN<span class="pink">,</span> AND MAKING USERS HAPPY<span class="pink">.</span></h2>
             <button class="call_to_action">
                 LET'S TALK
                 <!-- <div class="info">evanryk@gmail.com</div> -->
@@ -45,14 +45,14 @@
                     <div class="view" id="hotel">View Site</div>
                 </div>
                 <div class="grid__item">
-                    <img src="assets/calm-escarpment-26710.herokuapp.com_register.php.png" alt="" class="desk">
-                    <img src="assets/calm-escarpment-26710.herokuapp.com_book.php(iPhone 6_7_8 Plus).png" alt="" class="mob">
+                    <img src="assets/img/calm-escarpment-26710.herokuapp.com_register.php.png" alt="" class="desk">
+                    <img src="assets/img/calm-escarpment-26710.herokuapp.com_book.php(iPhone 6_7_8 Plus).png" alt="" class="mob">
                 </div>
             </div>
             <div class="grid__work alt">
                 <div class="grid__item">
-                    <img src="assets/evanchristians-php-quiz.herokuapp.com_results.php.png" alt="" class="desk">
-                    <img src="assets/evanchristians-php-quiz.herokuapp.com_(iPhone 6_7_8 Plus).png" alt="" class="mob">
+                    <img src="assets/img/evanchristians-php-quiz.herokuapp.com_results.php.png" alt="" class="desk">
+                    <img src="assets/img/evanchristians-php-quiz.herokuapp.com_(iPhone 6_7_8 Plus).png" alt="" class="mob">
                 </div>
                 <div class="grid__item">
                     <h3 class="under">Are You A Qu<span class="pink">?</span>zard</h3>
@@ -71,23 +71,10 @@
                     <div class="view" id="dream">View Site</div>
                 </div>
                 <div class="grid__item">
-                    <img src="assets/evanchristians.github.io_lima_bean_.png" alt="" class="desk">
-                    <img src="assets/evanchristians.github.io_lima_bean_(iPhone 6_7_8 Plus).png" alt="" class="mob">
+                    <img src="assets/img/evanchristians.github.io_lima_bean_.png" alt="" class="desk">
+                    <img src="assets/img/evanchristians.github.io_lima_bean_(iPhone 6_7_8 Plus).png" alt="" class="mob">
                 </div>
             </div>
-            <!-- <div class="grid__work alt">
-                <div class="grid__item">
-                    <img src="assets/evanchristians.github.io_jon-chretien_index.html.png" alt="" class="desk">
-                    <img src="assets/evanchristians.github.io_jon-chretien_index.html(iPhone 6_7_8 Plus).png" alt="" class="mob">
-                </div>
-                <div class="grid__item">
-                    <h3 class="under">Are You A Qu<span class="pink">?</span>zard</h3>
-                    <p>
-                        A quiz app build to test my knowledge of <span class="pink">PHP</span> form handling, functions and arrays. The app allows the user to <span class="pink">input</span> their name to be recalled at the <span class="pink">results</span> page, which calculates the number of answers the user answered <span class="pink">correctly</span> out of the total number of questions. The app also gives the user the option to <span class="pink">view</span> which of their answers were <span class="pink">incorrect</span> and view the corrections.
-                    </p>
-                    <div class="view">View Site</div>
-                </div>
-            </div> -->
         </div>
     </section>
     <footer id="contact">
@@ -98,7 +85,7 @@
                 <a href="https://dribbble.com/evanchristians" target="_blank"><i class="fab fa-dribbble"></i></a>
                 <a href="https://www.linkedin.com/in/evan-christians-50ba30159/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="copy">Made With <strong>L<span class="heart">O</span>VE</strong> (& caffine)</div>
+            <div class="copy">Made With <strong>L<span class="heart">O</span>VE</strong> (& caffeine)</div>
         </div>
     </footer>
 </body>
@@ -139,7 +126,6 @@
             $(".spin").addClass("spin_o");
         })
         $(".spin").mouseenter(function() {
-            // increaseCount()
             var current = $(this);
             current.addClass("bounce_o");
             setTimeout(function(){

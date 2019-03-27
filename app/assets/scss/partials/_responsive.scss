@@ -8,7 +8,7 @@
     grid-gap: 0;
     .grid__item {
       img {
-        box-shadow: 0 .25em 5em .25em #0f0f0f26;
+        box-shadow: 0 .5em 2em .25em #0f0f0f2a;
       }
     }
     .grid__item:nth-child(2) {
@@ -31,7 +31,16 @@
       border-bottom: 1px solid $primary_tspt;
     }
   }
-
+  .view {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+    background: $primary_main;
+    color: $grey;
+  }
+  .call_to_action {
+    width: 100%;
+  }
 }
 
 @media (max-width: 680px) {
